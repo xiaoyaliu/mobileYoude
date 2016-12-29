@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta http-equiv="pragma" content="no-cache">
+      <title data-attach-point="title">问题反馈 - 优德</title>
+      <meta data-attach-point="keywords" name="keywords" content="">
+      <meta data-attach-point="description" name="description" content="">
+      <link rel="stylesheet" type="text/css" href="src/mobile.min.css"/>
+      <script src="require.min.js"></script>
+      <script src="require-config.js"></script>
+</head>
+<body>
+<!--问题反馈-->
+<header class="cateHeader">
+      <div class="search_back" onclick="history.back()"></div>
+      <a class="goodCate">问题反馈</a>
+      <div class="go-quick-click" id="go-quick-click">
+            <a></a>
+      </div>
+</header>
+<div class="quick-go-div" id="quick-go-div">
+      <ul class="botList">
+            <li>
+                  <a href="/">首页</a>
+            </li>
+            <li>
+                  <a href="/cart">购物车</a>
+            </li>
+            <li>
+                  <a href="/user">用户中心</a>
+            </li>
+            <li>
+                  <a href="logisticsAll">物流查询</a>
+            </li>
+      </ul>
+</div>
+<div class="feed-title">
+      <input placeholder="请输入标题" maxlength="50" name="reason" value="">
+</div>
+<div class="feedBack-box">
+      <textarea class="common-input" name="desc" maxlength="500" placeholder="请输入您想反馈的问题！"></textarea>
+</div>
+
+<!--上传照片-->
+<div class="refund-img clearfix">
+
+      <form class="upload-form" data-attach-point="form">
+            <a>
+                  <img src="/image/upload_03.png">
+            </a>
+      <div class="file-input-wrapper">
+            <input type="file" class="file-input" multiple="multiple"  accept="image/*" name="feedback" data-attach-point="file" onchange="uploadImg(this)">
+      </div>
+
+      <div data-attach-point="imgList" class="upload-img-list">
+
+      </div>
+      </form>
+</div>
+
+<div class="clear"></div>
+
+<div class="operate-com">
+      <button type="button" class="saveBtn btn-primary" data-attach-point="save">提交</button>
+</div>
+<a href="tel:4008606111"><p class="hotLine-blue">客服热线：4008-606-111</p></a>
+
+<!--反馈成功-->
+<div class="success" data-attach-point="suc" style="display:none;">
+      <h3 class="reg-success">反馈成功!</h3>
+</div>
+<script>require(["components/1.0.1/feedback"])</script>
+</body>
+</html>
